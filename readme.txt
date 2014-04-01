@@ -1,9 +1,11 @@
 === Social Butterfly ===
 Contributors: website101.net
-Tags: social media sharing
+Tags: social media, social media sharing
 Requires at least: 3.0.1
 Tested up to: 3.8.1
 Stable tag: trunk
+Author URI: http://www.website101.net
+Plugin URI: http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,9 +15,21 @@ Social Butterfly is a sleek and attractive social media sharing plugin offering 
 
 [Social Butterfly](http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/) is a sleek and attractive social media sharing plugin for WordPress, offering users a unique, compact and enticing way to share your content. The plugin is lightweight, secure, and allows for easy integration above and below content on all posts (customizable in plugin settings) as well as simple post override settings (ex: show or hide social butterfly on an individual post).
 
-Live Demo & Detailed Instructions on [plugin homepage](http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/).
+**Demo & Detailed Instructions:** [visit plugin homepage](http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/).
+
+=Upcoming Features=
+Social Butterfly has just emerged from its cacoon. We're working hard on adding new and exciting features including:
+
+* **Custom Colors.** Customize the background, foreground and text color to match your site.
+* **Resizable.** Make social butterfly bigger for more impact.
+* **Expanded mode option.** Keep social butterfly open.
+* **Support for pages.** Include Social Butterfly on pages as well as posts.
+* **More Networks!** Tell us which networks you want to see.
+* **Suggest a feature.** Let us know what you'd like to see in Social Butterfly.
 
 == Installation ==
+**Full Instructions with Screenshots available on [plugin
+homepage](http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/).**
 
 1. Download plugin from WordPress Plugins Directory or directly through your WordPress Dashboard (Plugins menu > Add New).
 1. Activate the plugin through the 'Plugins' menu in WordPress.
