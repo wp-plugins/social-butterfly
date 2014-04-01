@@ -1,0 +1,9 @@
+.disabled {
+	color:#cccccc;
+}
+
+#social_butterfly_post_options{
+	background-image:url('/wp-content/plugins/social-butterfly/images/small-grey-bf.png');
+	background-repeat:no-repeat;
+	background-position:bottom 10px right 5px;
+}`

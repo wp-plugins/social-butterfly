@@ -1,0 +1,91 @@
+.social-butterfly{
+	display:block;
+}
+.social-butterfly .share-box{
+	max-height:24px;
+	overflow:hidden;
+	background:#F0542D;
+	height:24px;
+	display:inline-block;
+	position:relative;
+	font-size:12px;
+	border:0;
+	border-radius:2px;
+	font-family:'Open Sans','Helvetica',Neue,Helvetica,Arial,sans-serif;
+	color: #fff;
+	clear:both;
+	text-shadow:none !important;
+	margin: 15px 0;
+	z-index:2147483646;
+}
+
+.social-butterfly .share-box #left{
+	float:left;
+	line-height:24px;
+	white-space:nowrap;
+	padding-left:8px;
+	padding-right:10px;
+}
+
+.social-butterfly .share-box .middle{
+	float:left;
+	line-height:24px;
+	max-height:24px;
+	overflow:hidden;
+	margin-left:25px;
+}
+
+.social-butterfly .share-box .middle .icon-box{
+	width:23px;
+	border-left:1px solid #fa8f72;
+	float:left;
+	overflow:hidden;
+	max-height:24px;
+	cursor:pointer;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+.social-butterfly .share-box .middle #fb{
+	background-image:url('../images/fb.png');
+}
+.social-butterfly .share-box .middle #tw{
+	background-image:url('../images/tw.png');
+}
+.social-butterfly .share-box .middle #ggl{
+	background-image:url('../images/ggl.png');
+}
+.social-butterfly .share-box .middle #li{
+	background-image:url('../images/li.png');
+}
+
+.social-butterfly .share-box #right{
+	float:right;
+	border-left:1px solid #fa8f72;
+	height: 100%;
+	width: 45px;
+	text-align: center;
+	line-height: 24px;
+	cursor:default;
+}
+
+.social-butterfly .share-box .middle .twitter-share-button{
+	opacity:0;
+}
+
+.social-butterfly .share-box .middle #___plusone_0, .share-box .middle #___plusone_1{
+	opacity:0;
+}
+.gc-bubbleDefault, .pls-container
+{
+   display: none !important;
+   opacity:0 !important;
+   height:0 !important;
+   width:0 !important;
+}
+.social-butterfly .share-box .middle .IN-widget{
+	opacity:0;
+	display: inline !important;
+    	line-height: 2 !important;
+   	 margin-top: -5px !important;
+}
