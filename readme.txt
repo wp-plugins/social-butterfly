@@ -17,7 +17,7 @@ Social Butterfly is a sleek and attractive social media sharing plugin offering 
 
 **Demo & Detailed Instructions:** [visit plugin homepage](http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/).
 
-=Upcoming Features=
+**Upcoming Features**
 Social Butterfly has just emerged from its cacoon. We're working hard on adding new and exciting features including:
 
 * **Custom Colors.** Customize the background, foreground and text color to match your site.
@@ -38,6 +38,8 @@ homepage](http://www.website101.net/social-butterfly-sleek-social-media-sharing-
 1. Select whether to include Social Butterfly automatically on all posts above the content, below the content, or in both places.
 
 *Note: Social Butterfly allows you to override these default display settings on individual post edit pages. Selecting the "Override all individual post settings with these new settings" option here will override all custom post settings. If you want to maintain your existing post override settings (for example, to hide Social Butterfly on certain posts) then do *not select this option.
+
+**Post Override Settings**
 
 Let's say you want to include the plugin on all your posts except for a couple. Maybe your "Terms of Use" is a post and you don't really want to include Social Butterfly on this post. The best way to go about this is would be set your default options on the plugin settings page to include Social Butterfly on all posts, then override this setting on the individual posts where you don't want Social Butterfly to be included.
 
