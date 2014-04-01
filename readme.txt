@@ -17,7 +17,7 @@ Social Butterfly is a sleek and attractive social media sharing plugin offering 
 
 **Demo & Detailed Instructions:** [visit plugin homepage](http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/).
 
-**Upcoming Features**
+**Upcoming Features:**
 Social Butterfly has just emerged from its cacoon. We're working hard on adding new and exciting features including:
 
 * **Custom Colors.** Customize the background, foreground and text color to match your site.
