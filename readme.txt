@@ -1,6 +1,9 @@
 === Social Butterfly ===
 Contributors: website101.net
-Tags: social media, social media sharing
+Tags: social media, social media sharing, bookmark, bookmarking, bookmarks,
+buttons, button, Facebook, free, google, Like, link, linkedin, links, media,
+plugin, Post, posts, Share, sharing, social, social like, social share, social
+sharing, twitter, widget
 Requires at least: 3.0.1
 Tested up to: 3.8.1
 Stable tag: trunk
