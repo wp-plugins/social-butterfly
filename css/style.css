@@ -89,3 +89,10 @@
     	line-height: 2 !important;
    	 margin-top: -5px !important;
 }
+.social-butterfly .share-box .middle .li-top .IN-widget{
+        opacity:0;
+        display: block !important;
+        line-height: 2 !important;
+         margin-top: -22px !important;
+}
+
