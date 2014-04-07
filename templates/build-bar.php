@@ -23,7 +23,7 @@
 		}
 		if (get_option('social_butterfly_show_li')) {
 			$share_bar_code .= '
-				<div id="li" class="icon-box">
+				<div id="li" class="icon-box ' . $li_top_class . '">
 				        <script src="//platform.linkedin.com/in.js" type="text/javascript">
 				                lang: en_US
 				        </script>

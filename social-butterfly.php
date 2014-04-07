@@ -83,7 +83,8 @@ function social_butterfly_display_top($content) {
 
 	$share_bar_code = '';
         if( $post_show_top == true && in_the_loop() && is_single() ) {
-		$i = ''; // used in the include below 
+		$i = ''; // used in display_bottom include to set bottom middle id
+		$li_top_class = 'li-top'; //used in include below to set li top class 
 		include ('templates/build-bar.php');
 		return $share_bar_code . $content;
 	}
@@ -104,7 +105,8 @@ function social_butterfly_display_bot($content) {
 	
 	$share_bar_code = '';
 	if( $post_show_bot == true && in_the_loop() && is_single() ) { 
-		$i = '_bot';
+		$i = '_bot';// used in display_bottom include to set bottom middle id
+                $li_top_class = ''; //used in include below to set li top class
 		include ('templates/build-bar.php');
 		return $content . $share_bar_code;
 	}
