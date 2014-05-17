@@ -4,7 +4,7 @@
 Plugin Name: Social Butterfly
 Plugin URI: http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/
 Description: Social Butterfly is a sleek and attractive social media sharing plugin offering users a unique, compact and enticing way to share your content. The plugin is lightweight, secure, and allows for easy integration above and below content on all posts as well as simple post override settings.
-Version: 1.01
+Version: 1.02
 Author: Mohammed Khalfan
 License: GPLv2 or later
 Text Domain: social-butterfly

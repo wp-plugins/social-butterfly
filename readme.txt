@@ -2,8 +2,8 @@
 Contributors: website101.net
 Tags: social media, social media sharing, bookmark, bookmarking, bookmarks, buttons, button, Facebook, free, google, Like, link, linkedin, links, media, plugin, Post, posts, Share, sharing, social, social like, social share, social sharing, twitter, widget
 Requires at least: 3.0.1
-Tested up to: 3.8.1
-Stable tag: 1.01
+Tested up to: 3.9.1
+Stable tag: 1.02
 Author URI: http://www.website101.net
 Plugin URI: http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/
 License: GPLv2 or later
