@@ -50,6 +50,9 @@ Let's say you want to include the plugin on all your posts except for a couple. 
 
 == Changelog ==
 
+= 1.02 =
+* Bug fixes
+
 = 1.01 =
 * Bug fixes
 
