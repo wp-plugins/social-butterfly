@@ -39,6 +39,8 @@ function social_butterfly_display_settings() {
 	$show_ggl = (get_option('social_butterfly_show_ggl') == true) ? 'checked' : '';
 	$show_li = (get_option('social_butterfly_show_li') == true) ? 'checked' : '';
 
+	$is_open = (get_option('social_butterfly_is_open') == true) ? 'checked' : '';
+
 	if (get_option('social_butterfly_do_override') == "true"){
                 delete_post_meta_by_key('post_show_top');
                 delete_post_meta_by_key('post_show_bot');

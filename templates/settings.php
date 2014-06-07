@@ -61,6 +61,11 @@
 		    </td> 
 		</tr>
 		<tr>
+                    <td align="left" scope="row" style="width:440px;">
+                        <label>' . __('Keep Social Butterfly expanded','social-butterfly') . ' </label><br /><span style="font-size: 12px;color: #777;">' . __('(no mouse hover required to display social icons)','social-butterfly') . '</span></td><td style="vertical-align:top"><input type="checkbox" ' . $is_open . ' name="social_butterfly_is_open" value="true" />
+                    </td> 
+                </tr>
+		<tr>
 	            <td align="left" scope="row">
                     	<label>' . __('Don\'t override my existing individual post settings', 'social-butterfly') . '</label><br /><span style="font-size: 12px;color: #777;">' .  __('(recommended)', 'social-butterfly') . '</span></td><td style="vertical-align:top"><input type="radio" checked name="social_butterfly_do_override" value="false" />
                     </td> 
@@ -74,7 +79,7 @@
 </div>
             <p class="submit">
                 <input type="hidden" name="action" value="update" />  
-                <input type="hidden" name="page_options" value="social_butterfly_show_top,social_butterfly_show_bot, social_butterfly_do_override,social_butterfly_show_fb,social_butterfly_show_tw,social_butterfly_show_ggl,social_butterfly_show_li" /> 
+                <input type="hidden" name="page_options" value="social_butterfly_is_open,social_butterfly_show_top,social_butterfly_show_bot, social_butterfly_do_override,social_butterfly_show_fb,social_butterfly_show_tw,social_butterfly_show_ggl,social_butterfly_show_li" /> 
                 <input type="submit" name="Submit" value="Update" />
             </p>
             </form>

@@ -1,7 +1,14 @@
 <?php
-		$share_bar_code .=  '<div class="social-butterfly"><div class="social-butterfly-share-box" onmouseover="document.getElementById(\'social-butterfly-middle' . $i . '\').style.display=\'block\';" onmouseout="document.getElementById(\'social-butterfly-middle' . $i . '\').style.display=\'none\';">
+		# the inline style if we're hiding social butterfly (hover to reveal)
+		$hide_style = get_option('social_butterfly_is_open') ? '' : 'style="display:none"';
+		# the js required if we're hiding social butterfly
+		$hide_js = '';
+		if (!get_option('social_butterfly_is_open')){
+			$hide_js = 'onmouseover="document.getElementById(\'social-butterfly-middle' . $i . '\').style.display=\'block\';" onmouseout="document.getElementById(\'social-butterfly-middle' . $i . '\').style.display=\'none\';"';
+		}
+		$share_bar_code .=  '<div class="social-butterfly"><div class="social-butterfly-share-box" ' . $hide_js .'>
 		<div id="social-butterfly-left">SHARE</div>
-		<div id="social-butterfly-middle' . $i . '" class="social-butterfly-middle" style="display:none">';
+		<div id="social-butterfly-middle' . $i . '" class="social-butterfly-middle" ' . $hide_style  . '>';
 		if (get_option('social_butterfly_show_fb')) {
 			$share_bar_code .= '
 			<div id="social-butterfly-fb" class="social-butterfly-icon-box">
