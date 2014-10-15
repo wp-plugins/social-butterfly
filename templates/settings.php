@@ -9,25 +9,40 @@
 		<h3 style="font-size:15px;font-weight:normal;padding:7px 7px;margin-bottom:-10px;">Select Networks</h3>
 	    <table width="100%" cellpadding="10" class="form-table">
 		<tr>
-		    <td align="left" scope="row">
+		    <td align="left" scope="row" style="padding-bottom:10px">
 		    	<label class="social_butterfly_network_select" style="width:100px;font-weight:bold;display:inline-block">Facebook</label><input type="checkbox" '.$show_fb.' name="social_butterfly_show_fb" value="true" />
 		    </td> 
 		</tr>
 		<tr>
-		    <td align="left" scope="row">
-		    	<label class="social_butterfly_network_select" style="width:100px;font-weight:bold;display:inline-block">Twitter</label><input type="checkbox" '.$show_tw.' name="social_butterfly_show_tw" value="true" />
-		    </td> 
-		</tr>
-		<tr>
-		    <td align="left" scope="row">
+		    <td align="left" scope="row" style="padding-bottom:10px">
 		    	<label class="social_butterfly_network_select" style="width:100px;font-weight:bold;display:inline-block">Google Plus</label><input type="checkbox" '.$show_ggl.' name="social_butterfly_show_ggl" value="true" />
 		    </td> 
 		</tr>
 		<tr>
-		    <td align="left" scope="row">
+		    <td align="left" scope="row" style="padding-bottom:10px">
 		    	<label class="social_butterfly_network_select" style="width:100px;font-weight:bold;display:inline-block">LinkedIn</label><input type="checkbox" '.$show_li.' name="social_butterfly_show_li" value="true" />
 		    </td> 
 		</tr>
+		<tr>
+                    <td align="left" scope="row" style="padding-bottom:5px;">
+                        <label class="social_butterfly_network_select" style="width:100px;font-weight:bold;display:inline-block">Twitter</label><input type="checkbox" '.$show_tw.' name="social_butterfly_show_tw" value="true" />
+                    </td>
+                </tr>
+		<tr>
+                    <td align="left" scope="row" style="padding-top:0px">
+			<div style="width:100px;float:left;">
+				<div style="float:left">
+                        		<label class="social_butterfly_twitter_via">Handle</label>
+				</div>
+				<div style="float:right;color:grey;margin-right:4px;margin-top:4px;">@</div>
+			</div>
+			<div style="float:left">
+				<input type="text" name="social_butterfly_twitter_via" value="' . $twitter_via . '" style="margin-left:-1px;width:100px;font-size:11px;" />
+			</div>
+                    </td>
+                </tr>
+
+
 </table>
 </div>
 
@@ -62,7 +77,7 @@
 		</tr>
 		<tr>
                     <td align="left" scope="row" style="width:440px;">
-                        <label>' . __('Keep Social Butterfly expanded','social-butterfly') . ' </label><br /><span style="font-size: 12px;color: #777;">' . __('(no mouse hover required to display social icons)','social-butterfly') . '</span></td><td style="vertical-align:top"><input type="checkbox" ' . $is_open . ' name="social_butterfly_is_open" value="true" />
+                        <label>' . __('Keep Social Butterfly expanded','social-butterfly') . ' </label><br /><span style="font-size: 12px;color: #777;">' . __('(no mouse hover required to display icons)','social-butterfly') . '</span></td><td style="vertical-align:top"><input type="checkbox" ' . $is_open . ' name="social_butterfly_is_open" value="true" />
                     </td> 
                 </tr>
 		<tr>
@@ -79,7 +94,7 @@
 </div>
             <p class="submit">
                 <input type="hidden" name="action" value="update" />  
-                <input type="hidden" name="page_options" value="social_butterfly_is_open,social_butterfly_show_top,social_butterfly_show_bot, social_butterfly_do_override,social_butterfly_show_fb,social_butterfly_show_tw,social_butterfly_show_ggl,social_butterfly_show_li" /> 
+                <input type="hidden" name="page_options" value="social_butterfly_is_open,social_butterfly_show_top,social_butterfly_show_bot, social_butterfly_do_override,social_butterfly_show_fb,social_butterfly_show_tw,social_butterfly_show_ggl,social_butterfly_show_li,social_butterfly_twitter_via" /> 
                 <input type="submit" name="Submit" value="Update" />
             </p>
             </form>
