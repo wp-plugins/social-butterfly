@@ -6,7 +6,7 @@
 	    <h2>Social Butterfly Settings</h2>' . wp_nonce_field('update-options') . '
 	<div style="width:550px;">
 	<div class="postbox" style="margin-top:10px;width:250px;float:left;display:block;height:240px">
-		<h3 style="font-size:15px;font-weight:normal;padding:7px 7px;margin-bottom:-10px;">Select Networks</h3>
+		<h3 style="font-size:15px;font-weight:normal;padding:0 0 12px 7px;margin-bottom:-10px;margin-top:12px;border-bottom:1px solid lightgrey">Select Networks</h3>
 	    <table width="100%" cellpadding="10" class="form-table">
 		<tr>
 		    <td align="left" scope="row" style="padding-bottom:10px">
@@ -47,7 +47,7 @@
 </div>
 
 <div class="postbox" style="margin-top:10px;width:275px;float:right;background-image:url(\'' . plugins_url() . '/social-butterfly/images/small-grey-bf.png\');background-repeat:no-repeat;background-position:210px 180px;">
-	<h3 style="font-size: 15px;font-weight:normal;padding:7px 7px;margin-bottom:-10px;">Fly With Us</h3>
+	<h3 style="font-size: 15px;font-weight:normal;padding:0 0 12px 7px;margin-bottom:-10px;margin-top:12px;border-bottom:1px solid lightgrey">Fly With Us</h3>
 
 	<p style="margin:15px;padding-top:10px;font-weight:bold">Please report bugs, provide feedback and submit feature requests <a href="http://www.website101.net/contact-us">here</a>.</p>
 	<p style="text-align:center;font-style:italic;padding:7px 0;border-bottom:1px solid #F1F1F1;border-top:1px solid #F1F1F1;">"The caterpillar does all the work,<br>but the butterfly gets all the glory"</p>
@@ -63,7 +63,7 @@
 </div>
 
 <div class="postbox" style="width:550px;clear:both">
-<h3 style="font-size:15px;font-weight:normal;padding:7px 7px;margin-bottom:-10px;">Display Settings</h3>
+<h3 style="font-size:15px;font-weight:normal;padding:0 0 12px 7px;margin-bottom:-10px;margin-top:12px;border-bottom:1px solid lightgrey">Display Settings</h3>
 <table width="100%" cellpadding="10" class="form-table">
 		<tr>
 		    <td align="left" scope="row" style="width:440px;">
