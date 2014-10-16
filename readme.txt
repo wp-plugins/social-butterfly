@@ -48,6 +48,11 @@ Let's say you want to include the plugin on all your posts except for a couple. 
 1. Update your post. That's all!
 
 == Changelog ==
+= 1.05 =
+* Automatically include your Twitter handle in tweets
+* Slight makeover to expanded mode
+* Bug fixes
+
 
 = 1.04 =
 * **New Feature!** Expanded mode option. Keep social butterfly open.
