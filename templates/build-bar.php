@@ -39,6 +39,6 @@
 		}
 		$share_bar_code .=  '
 			</div>
-			<div id="social-butterfly-right" class="' . $expanded_class . '">+</div>
+			<div id="social-butterfly-right" class="' . $expanded_class . '">' . $plus_sign . '</div>
 		</div></div>';
 ?>
