@@ -2,8 +2,8 @@
 Contributors: website101.net
 Tags: social media, social media sharing, bookmark, bookmarking, bookmarks, buttons, button, Facebook, free, google, Like, link, linkedin, links, media, plugin, Post, posts, Share, sharing, social, social like, social share, social sharing, twitter, widget
 Requires at least: 3.0.1
-Tested up to: 3.9.1
-Stable tag: 1.02
+Tested up to: 4.0
+Stable tag: 1.06
 Author URI: http://www.website101.net
 Plugin URI: http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/
 License: GPLv2 or later
@@ -22,7 +22,6 @@ Social Butterfly has just emerged from its cacoon. We're working hard on adding 
 
 * **Custom Colors.** Customize the background, foreground and text color to match your site.
 * **Resizable.** Make social butterfly bigger for more impact.
-* **Expanded mode option.** Keep social butterfly open.
 * **Support for pages.** Include Social Butterfly on pages as well as posts.
 * **More Networks!** Tell us which networks you want to see.
 * **Suggest a feature.** Let us know what you'd like to see in Social Butterfly.
@@ -49,8 +48,17 @@ Let's say you want to include the plugin on all your posts except for a couple. 
 1. Update your post. That's all!
 
 == Changelog ==
+= 1.06 =
+* Bug fix
 
-= 1.02 =
+= 1.05 =
+* Automatically include your Twitter handle in tweets
+* Slight makeover to expanded mode
+
+= 1.04 =
+* **New Feature!** Expanded mode option. Keep social butterfly open.
+
+= 1.03 =
 * Bug fixes
 
 = 1.01 =
