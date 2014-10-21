@@ -74,6 +74,11 @@
 	width:5px;
 }
 
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle iframe{
+        opacity:0!important;
+}
+
+
 .social-butterfly .social-butterfly-share-box .social-butterfly-middle .twitter-share-button{
 	opacity:0!important;
 }
