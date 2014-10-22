@@ -16,7 +16,7 @@
 		if (get_option('social_butterfly_show_fb')) {
 			$share_bar_code .= '
 			<div id="social-butterfly-fb" class="social-butterfly-icon-box" style="border-left:1px solid #' . $border_color . '">
-				        <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.google.com&amp;layout=button_count&amp;show_faces=false&amp;width=55&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none;overflow:hidden; width:65px; height:65px;opacity:0;"></iframe>
+				        <iframe src="http://www.facebook.com/plugins/like.php?href=' . get_permalink() . '&amp;layout=button_count&amp;show_faces=false&amp;width=55&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none;overflow:hidden; width:65px; height:65px;opacity:0;"></iframe>
 				</div>';
 		}
 		if (get_option('social_butterfly_show_tw')) {
