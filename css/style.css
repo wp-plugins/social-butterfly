@@ -58,6 +58,10 @@
 .social-butterfly .social-butterfly-share-box .social-butterfly-middle #social-butterfly-li{
 	background-image:url('../images/li.png');
 }
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle #social-butterfly-pi{
+        background-image:url('../images/pi.png');
+}
+
 
 .social-butterfly .social-butterfly-share-box #social-butterfly-right{
 	float:right;
@@ -69,11 +73,21 @@
 	cursor:default;
 }
 
+.social-butterfly .social-butterfly-share-box #social-butterfly-right.is_open{
+	border-left:0;
+	width:5px;
+}
+
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle iframe{
+        opacity:0!important;
+}
+
+
 .social-butterfly .social-butterfly-share-box .social-butterfly-middle .twitter-share-button{
 	opacity:0!important;
 }
 
-.social-butterfly .social-butterfly-share-box .social-butterfly-middle #___plusone_0, .social-butterfly-share-box .middle #___plusone_1{
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle #___plusone_0, .social-butterfly-share-box .social-butterfly-middle #___plusone_1{
 	opacity:0!important;
 }
 .gc-bubbleDefault, .pls-container
@@ -83,6 +97,16 @@
    height:0 !important;
    width:0 !important;
 }
+
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle .social-butterfly-icon-box img {
+    opacity: 0;
+}
+
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle .social-butterfly-icon-box a{
+    opacity: 0;
+}
+
+
 .social-butterfly .social-butterfly-share-box .social-butterfly-middle .IN-widget{
 	opacity:0;
 	display: inline !important;

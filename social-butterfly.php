@@ -4,7 +4,7 @@
 Plugin Name: Social Butterfly
 Plugin URI: http://www.website101.net/social-butterfly-sleek-social-media-sharing-plugin-for-wordpress/
 Description: Social Butterfly is a sleek and attractive social media sharing plugin offering users a unique, compact and enticing way to share your content. The plugin is lightweight, secure, and allows for easy integration above and below content on all posts as well as simple post override settings.
-Version: 1.02
+Version: 1.09
 Author: Mohammed Khalfan
 License: GPLv2 or later
 Text Domain: social-butterfly
@@ -38,6 +38,14 @@ function social_butterfly_display_settings() {
 	$show_tw = (get_option('social_butterfly_show_tw') == true) ? 'checked' : '';
 	$show_ggl = (get_option('social_butterfly_show_ggl') == true) ? 'checked' : '';
 	$show_li = (get_option('social_butterfly_show_li') == true) ? 'checked' : '';
+	$show_pi = (get_option('social_butterfly_show_pi') == true) ? 'checked' : '';
+
+	$is_open = (get_option('social_butterfly_is_open') == true) ? 'checked' : '';
+
+	$twitter_via = (get_option('social_butterfly_twitter_via'));
+
+	$bg_color = (get_option('social_butterfly_bg_color') == '') ? '444' : get_option('social_butterfly_bg_color');
+	$border_color = (get_option('social_butterfly_border_color') == '') ? 'fff' : get_option('social_butterfly_border_color');
 
 	if (get_option('social_butterfly_do_override') == "true"){
                 delete_post_meta_by_key('post_show_top');
@@ -80,7 +88,9 @@ function social_butterfly_display_top($content) {
 	global $post;
 	$values = get_post_custom( $post->ID );
 	$post_show_top = isset( $values['post_show_top'] ) ? esc_attr( $values['post_show_top'][0] ) : get_option('social_butterfly_show_top');
-
+	$twitter_via = get_option('social_butterfly_twitter_via');
+	$bg_color = (get_option('social_butterfly_bg_color') == '') ? '444' : get_option('social_butterfly_bg_color');
+        $border_color = (get_option('social_butterfly_border_color') == '') ? 'fff' : get_option('social_butterfly_border_color');
 	$share_bar_code = '';
         if( $post_show_top == true && in_the_loop() && is_single() ) {
 		$i = ''; // used in display_bottom include to set bottom middle id
@@ -102,7 +112,9 @@ function social_butterfly_display_bot($content) {
 	global $post;
 	$values = get_post_custom( $post->ID );
 	$post_show_bot = isset( $values['post_show_bot'] ) ? esc_attr( $values['post_show_bot'][0] ) : get_option('social_butterfly_show_bot');
-	
+	$twitter_via = get_option('social_butterfly_twitter_via');
+	$bg_color = (get_option('social_butterfly_bg_color') == '') ? '444' : get_option('social_butterfly_bg_color');
+        $border_color = (get_option('social_butterfly_border_color') == '') ? 'fff' : get_option('social_butterfly_border_color');
 	$share_bar_code = '';
 	if( $post_show_bot == true && in_the_loop() && is_single() ) { 
 		$i = '_bot';// used in display_bottom include to set bottom middle id
