@@ -9,9 +9,10 @@
 		# if bar is open, the right div will have a unique class, and don't show the '+' sign (in the right div)
 		$expanded_class = $is_open ? 'is_open' : '';
 		$plus_sign = $is_open ? '' : '+';
+		$open_plus = $is_open ? '+' : '';
 		# begin building bar
 		$share_bar_code .=  '<div class="social-butterfly"><div style="background-color:#' . $bg_color .'" class="social-butterfly-share-box" ' . $hide_js .'>
-		<div id="social-butterfly-left">SHARE</div>
+		<div id="social-butterfly-left">SHARE' . $open_plus . '</div>
 		<div id="social-butterfly-middle' . $i . '" class="social-butterfly-middle" ' . $hide_style  . '>';
 		if (get_option('social_butterfly_show_fb')) {
 			$share_bar_code .= '
@@ -37,6 +38,10 @@
 				<div id="social-butterfly-li" class="social-butterfly-icon-box ' . $li_top_class . '" style="border-left:1px solid #' . $border_color . '">
 				        <script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/Share"></script></div>';
 		}
+		 if (get_option('social_butterfly_show_pi')) {
+                        $share_bar_code .= '
+                                <div id="social-butterfly-pi" class="social-butterfly-icon-box" style="border-left:1px solid #' . $border_color . '"><a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-color="red"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_20.png" /></a></div><script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>';
+                }
 		$share_bar_code .=  '
 			</div>
 			<div id="social-butterfly-right" class="' . $expanded_class . '">' . $plus_sign . '</div>

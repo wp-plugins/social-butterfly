@@ -7,7 +7,7 @@
 
 	    <h2>Social Butterfly Settings</h2>' . wp_nonce_field('update-options') . '
 	<div style="width:550px;">
-	<div class="postbox" style="margin-top:10px;width:250px;float:left;display:block;height:240px">
+	<div class="postbox" style="margin-top:10px;width:250px;float:left;display:block;height:290px">
 		<h3 style="font-size:15px;font-weight:normal;padding:0 0 12px 7px;margin-bottom:-10px;margin-top:12px;border-bottom:1px solid lightgrey">Select Networks</h3>
 	    <table width="100%" cellpadding="10" class="form-table">
 		<tr>
@@ -27,9 +27,15 @@
 		</tr>
 		<tr>
                     <td align="left" scope="row" style="padding-bottom:5px;">
+                        <label class="social_butterfly_network_select" style="width:100px;font-weight:bold;display:inline-block">Pinterest</label><input type="checkbox" '.$show_pi.' name="social_butterfly_show_pi" value="true" />
+                    </td>
+                </tr>
+		 <tr>
+                    <td align="left" scope="row" style="padding-bottom:5px;">
                         <label class="social_butterfly_network_select" style="width:100px;font-weight:bold;display:inline-block">Twitter</label><input type="checkbox" '.$show_tw.' name="social_butterfly_show_tw" value="true" />
                     </td>
                 </tr>
+
 		<tr>
                     <td align="left" scope="row" style="padding-top:0px">
 			<div style="width:100px;float:left;">
@@ -112,12 +118,13 @@
 <div id="sb_open">
 <div class="social-butterfly">
 	<div id="social-butterfly-share-box" style="max-height:24px;overflow:hidden;background:#' . $bg_color . ';height:24px;display:inline-block;position:relative;font-size:12px;border:0;border-radius:2px;font-family:\'Open Sans\',\'Helvetica\',Neue,Helvetica,Arial,sans-serif;color: #fff;clear:both;text-shadow:none !important;margin: 15px 0;" class="social-butterfly-share-box" >
-        <div id="social-butterfly-left" style="float: left;line-height: 24px;white-space: nowrap;padding-left: 8px;padding-right: 10px;">SHARE</div>
+        <div id="social-butterfly-left" style="float: left;line-height: 24px;white-space: nowrap;padding-left: 8px;padding-right: 10px;">SHARE+</div>
             <div id="social-butterfly-middle-x" class="social-butterfly-middle" style="float: left;line-height: 24px;max-height: 24px;overflow: hidden;margin-left: 25px;">
                 <div id="social-butterfly-fb" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/fb.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
                 <div id="social-butterfly-tw" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/tw.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
                 <div id="social-butterfly-ggl" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/ggl.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
                 <div id="social-butterfly-li" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/li.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
+		 <div id="social-butterfly-pi" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/pi.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
 	    </div>
             <div id="social-butterfly-right" style="border-left: 0;width: 5px;float: right;height: 100%;line-height: 24px;"></div>
             </div>
@@ -135,6 +142,8 @@
                 <div id="social-butterfly-tw" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/tw.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
                 <div id="social-butterfly-ggl" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/ggl.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
                 <div id="social-butterfly-li" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/li.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
+		<div id="social-butterfly-pi" class="social-butterfly-icon-box" style="background-image: url(\'' . plugins_url() . '/social-butterfly/images/pi.png\');width: 23px;float: left;overflow: hidden;max-height: 24px;cursor: pointer;background-position: center;background-repeat: no-repeat;">&nbsp;</div>
+
            </div>     
 	   <div id="social-butterfly-right" style="border-left: 1px solid #fff;width: 45px;float: right;height: 100%;line-height: 24px;text-align:center;cursor:default;color:white;" class="social-butterfly-icon-box">+</div>
             </div>
@@ -174,7 +183,7 @@
 </div>
             <p class="submit">
                 <input type="hidden" name="action" value="update" />  
-                <input type="hidden" name="page_options" value="social_butterfly_is_open,social_butterfly_show_top,social_butterfly_show_bot, social_butterfly_do_override,social_butterfly_show_fb,social_butterfly_show_tw,social_butterfly_show_ggl,social_butterfly_show_li,social_butterfly_twitter_via, social_butterfly_bg_color, social_butterfly_border_color" /> 
+                <input type="hidden" name="page_options" value="social_butterfly_is_open,social_butterfly_show_top,social_butterfly_show_bot, social_butterfly_do_override,social_butterfly_show_fb,social_butterfly_show_tw,social_butterfly_show_ggl,social_butterfly_show_li,social_butterfly_show_pi,social_butterfly_twitter_via, social_butterfly_bg_color, social_butterfly_border_color" /> 
                 <input type="submit" name="Submit" value="Update" />
             </p>
             </form>

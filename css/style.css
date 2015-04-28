@@ -58,6 +58,10 @@
 .social-butterfly .social-butterfly-share-box .social-butterfly-middle #social-butterfly-li{
 	background-image:url('../images/li.png');
 }
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle #social-butterfly-pi{
+        background-image:url('../images/pi.png');
+}
+
 
 .social-butterfly .social-butterfly-share-box #social-butterfly-right{
 	float:right;
@@ -93,6 +97,16 @@
    height:0 !important;
    width:0 !important;
 }
+
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle .social-butterfly-icon-box img {
+    opacity: 0;
+}
+
+.social-butterfly .social-butterfly-share-box .social-butterfly-middle .social-butterfly-icon-box a{
+    opacity: 0;
+}
+
+
 .social-butterfly .social-butterfly-share-box .social-butterfly-middle .IN-widget{
 	opacity:0;
 	display: inline !important;
